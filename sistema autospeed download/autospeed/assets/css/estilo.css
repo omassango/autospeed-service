@@ -1,0 +1,12 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #342f2f;
+}
+
+h1, h4 {
+    color: #342f2f;
+}
+
+.btn {
+    font-weight: bold;
+}

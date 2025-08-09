@@ -1,0 +1,20 @@
+<?php
+include '../config/db.php';
+
+$id = $_POST['id'];
+$nome = $_POST['nome'];
+$usuario = $_POST['usuario'];
+$tipo = $_POST['tipo'];
+
+if (empty($id)) {
+    // Novo usuário
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $sql = "INSERT INTO usuarios (nome, usuario, senha, tipo)
+            VALUES ('$nome', '$usuario', '$senha', '$tipo')";
+} else {
+    // Atualização
+    $sql = "UPDATE usuarios SET nome='$nome', usuario='$usuario', tipo='$tipo' WHERE id=$id";
+}
+
+mysqli_query($conn, $sql);
+header("Location: index.php");

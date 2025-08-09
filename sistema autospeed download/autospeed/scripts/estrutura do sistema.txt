@@ -1,0 +1,45 @@
+autospeed/
+│
+├── config/
+│   └── db.php                # Conexão com o banco de dados
+│
+├── includes/                # Arquivos reaproveitáveis (cabeçalho, rodapé, menu, funções)
+│   ├── header.php
+│   ├── footer.php
+│   ├── menu.php
+│   └── funcoes.php          # Funções auxiliares (validação, cálculo, etc)
+│
+├── clientes/
+│   ├── index.php            # Listar clientes
+│   ├── novo.php             # Formulário de cadastro
+│   ├── editar.php           # Edição
+│   └── salvar.php           # Processa cadastro/edição
+│
+├── produtos/
+│   ├── index.php
+│   └── ...
+│
+├── orcamentos/
+│   ├── index.php
+│   ├── novo.php
+│   ├── detalhes.php
+│   └── salvar.php
+│
+├── financeiro/
+│   ├── contas_pagar.php
+│   ├── contas_receber.php
+│   ├── movimentacoes.php
+│   └── comissoes.php
+│
+├── agendamentos/
+│   ├── index.php
+│   ├── novo.php
+│   └── salvar.php
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── img/
+│
+├── index.php                # Página inicial (painel/resumo)
+└── logout.php               # Encerrar sessão

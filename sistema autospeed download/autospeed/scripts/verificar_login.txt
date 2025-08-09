@@ -1,0 +1,16 @@
+<?php
+session_start();
+
+// Usuário padrão (pode ser depois puxado do banco)
+$usuario_padrao = 'admin';
+$senha_padrao = '1234';
+
+$usuario = $_POST['usuario'];
+$senha = $_POST['senha'];
+
+if ($usuario === $usuario_padrao && $senha === $senha_padrao) {
+    $_SESSION['usuario'] = $usuario;
+    header("Location: index.php");
+} else {
+    header("Location: login.php?erro=1");
+}
