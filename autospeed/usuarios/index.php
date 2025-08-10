@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $sql);
 <div class="container mt-4">
 <div class="d-flex justify-content-between mb-3">
     <h4>Lista de Usuários</h4>
-    <a href="cadastrar.php" class="btn btn-success">Cadastrar Novo Usuário</a>
+    <a href="cadastrar.php" class="btn btn-success">Criar Novo Usuário</a>
 </div>
 <?php if (isset($_GET['msg']) && $_GET['msg'] == 'ok'): ?>
     <div class="alert alert-success">Usuário criado com sucesso!</div>
