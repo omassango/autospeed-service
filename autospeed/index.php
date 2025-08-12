@@ -23,8 +23,8 @@ include 'config/db.php';
 
 <div class="container mt-4">
     <div class="text-center mb-4">
-        <h2>Sistema de Controlo de Serviços da Autospeed Service</h2>
         <img src="assets/img/logo-autospeed.png" width="120" alt="Logo Autospeed">
+        <h2>Sistema de Controlo de Serviços da Autospeed Service</h2>
         <hr>
     </div>
     
