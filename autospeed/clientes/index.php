@@ -22,6 +22,7 @@ include '../config/db.php';
                 <th>Nome do Cliente</th>
                 <th>Telefone</th>
                 <th>Email</th>
+                <th>Endereço</th>
                 <th>Ações</th>
             </tr>
         </thead>
