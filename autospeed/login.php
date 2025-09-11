@@ -38,7 +38,7 @@ session_start();
             <div class="card-body">
                 <?php if (isset($_GET['erro'])): ?>
                     <!-- <div class="alert alert-danger">Usuário ou senha inválidos!</div> -->
-                    <div class="alert alert-danger">Por favor, tente de novo dentre 91 anos e 19 meses. </div>
+                    <div class="alert alert-danger">Por favor, tente de novo dentre 91 anos e 19 meses.</div>
                 <?php endif; ?>
                 <form action="validar_login.php" method="POST">
                     <div class="mb-3">
